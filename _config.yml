@@ -6,8 +6,8 @@ highlighter:      rouge
 title:            Hydeout
 tagline:          'A Jekyll theme'
 description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://fongandrew.github.io
-baseurl:          '/hydeout'
+url:              https://cromanpa94.github.io/ACC/
+baseurl:          '/ACC'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -33,3 +33,7 @@ sidebar_home_link:  true
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+
+github:
+  repo:           https://github.com/cromanpa94/ACC
+version:          1.0.0
