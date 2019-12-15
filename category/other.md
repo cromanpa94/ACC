@@ -3,6 +3,26 @@ layout: category
 title: Other databases
 ---
 
-Sample category page. You need to create a page for each category.
-The category is inferred from the title of the page, but you can also
-specify it with the `category` attribute in the front matter.
+**Animals**
+Chromosomes of Russian mammals
+Chromorep: a reptiles chromosomes database
+
+**Plants**
+BSBI cytology search form
+Chilean plants cytogenetic database
+Chromosome counts for Malvaceae
+“Flora” section of Biocat
+Flora of North America
+Karyological database of the genus Cardamine
+Karyological database of ferns and flowering plants of Slovakia
+Index to CNs in Asteraceae
+Index of CNs of indigenous New Zealand vascular plants
+The Chromosome Count Database
+Index to plant CNs
+Prota4U
+Published chromosome counts in Hieracium
+Worldwide database of published CNs in Onosma
+
+**Animals and plants**
+Tree of sex
+Genome Size Database
