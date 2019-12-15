@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Layout: Excerpt (Generated with Separator Tag)"
+title: "About"
 excerpt_separator: "<!--more-->"
 categories:
   - Layout
