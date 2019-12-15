@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Contact us
-sidebar_link: true
-sidebar_sort_order: 6
-
+sidebar_link: false
 ---
 
 <p class="message">
