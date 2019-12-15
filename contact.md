@@ -2,7 +2,7 @@
 layout: page
 title: Contact us
 sidebar_link: true
-sidebar_sort_order: 1
+sidebar_sort_order: 6
 
 ---
 
