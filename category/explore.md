@@ -3,25 +3,6 @@ layout: category
 title: Explore
 ---
 
-Sample category page. You need to create a page for each category.
-The category is inferred from the title of the page, but you can also
-specify it with the `category` attribute in the front matter.
+Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can be retrieved for either haploid (*N*) or diploid (*2N*) chromosome counts. All lineages with chromosome counts are listed below.
 
-```md
----
-layout: category
-title: My Category
----
-```
-
-Or ...
-
-```md
----
-layout: category
-title: Fancy Title
-category: My Category
----
-```
-
-Posts get listed below here.
+Please type any target lineage under the corresponding drop-down menu. Select at least one group, though multiple groups can be simultaneously selected. On a side note, data can be duplicated depending on the combination of lineages. For instance, if Chordates and Anura are selected simultaneously, data for Anura will be shown duplicated in the graph and descriptive statistics.
