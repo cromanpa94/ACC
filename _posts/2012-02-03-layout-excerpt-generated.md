@@ -11,12 +11,9 @@ tags:
 last_modified_at: 2012-02-03T12:32:16-05:00
 ---
 
-This is the post content. Archive-index pages should display an [auto-generated excerpt](https://jekyllrb.com/docs/posts/#post-excerpts) of all the content preceding the `excerpt_separator`, as defined in the YAML Front Matter or globally in `_config.yml`.
+Everyone can contribute to the **ACC**. This is a community resource that aims to contain as many chromosome counts as possible from as many animal species as possible. New counts for species already listed in the database are highly encouraged.
 
-Be sure to test the formatting of the auto-generated excerpt, to ensure that it doesn't create any layout problems.
+The most recent release of the ACCDB includes chromosome counts for ~ 20,000 animal species. We expect that future releases of the **ACC** to (i) increase the number of species with chromosome counts, and (ii) expand the taxonomic breadth of the database to major unsampled groups.
 
-<!--more-->
 
-Lorem ipsum dolor sit amet, dicant nusquam corpora in usu, laudem putent fuisset ut eam. Justo accusam definitionem id cum, choro prodesset ex his. Noluisse constituto intellegebat ea mei. Timeam admodum omnesque pri ex, eos habemus suavitate aliquando cu. Dico nihil delectus quo cu. Ludus cetero cu eos, vidit invidunt dissentiet mea ne.
-
-Usu delenit vocibus elaboraret ex. Scripta sapientem adversarium ei pri, pri ex solet democritum. Nam te porro impedit, ei doctus albucius cotidieque pri, ea mutat causae lucilius has. Pri omnis errem labore ut. An aperiam tibique est, mei te dolore veritus, nam nulla feugait ut. In vis labitur eripuit contentiones.
+*Feel free to contact us with questions, suggestions, corrections, or anything.
