@@ -9,9 +9,13 @@ Please type any target lineage under the corresponding drop-down menu. Select at
 
 
 ```{r}
-# Source: http://www.htmlwidgets.org/showcase_plotly.html
+install.packages(plotly) # if you haven't installed the package
 library(plotly)
-p <- ggplot(data = diamonds, aes(x = cut, fill = clarity)) +
-            geom_bar(position = "dodge")
-ggplotly(p)
+
+p <- ggplot(data = stops_county, aes(x = pct_black_stopped, y = pct_white_stopped)) +
+  geom_point()
+
+ggplotly(p) 
+
+
 ```
