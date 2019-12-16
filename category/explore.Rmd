@@ -14,6 +14,3 @@ Please type any target lineage under the corresponding drop-down menu. Select at
 library(DT)
 datatable(iris, class = 'cell-border stripe')
 ```
-
-
-[Link title]({{ site.baseurl }}{% link page/index.html %})
