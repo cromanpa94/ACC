@@ -38,3 +38,7 @@ DT::datatable(ACC[,-c(1,2,12)],rownames = F,
                   )
 )
 ```
+
+
+[Link title]({{ site.baseurl }}{% link page/index.html %})
+
