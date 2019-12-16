@@ -37,3 +37,5 @@ sidebar_home_link:  true
 github:
   repo:           https://github.com/cromanpa94/ACC
 version:          1.0.0
+
+exclude: ['*.Rmd'].
