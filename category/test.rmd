@@ -1,6 +1,9 @@
 ---
 layout: category
 title: test
+output:
+  html_document:
+    keep_md: true
 ---
 
 Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can be retrieved for either haploid (*N*) or diploid (*2N*) chromosome counts. All lineages with chromosome counts are listed below.
