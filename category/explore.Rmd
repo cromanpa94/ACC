@@ -8,3 +8,14 @@ output:
 
 
 Data from the **ACC** can be easily downloaded from this website. The dataset can be filtered by taxonomic names or haploid/diploid counts. Multiple filters can be applied simultaneously to the database.
+
+
+```{r out.width='100%', echo=FALSE}
+library(leaflet)
+leaflet() %>% addTiles() %>%
+  setView(-93.65, 42.0285, zoom = 17) %>%
+  addPopups(
+    -93.65, 42.0285,
+    'Here is the <b>Department of Statistics</b>, ISU'
+  )
+```
