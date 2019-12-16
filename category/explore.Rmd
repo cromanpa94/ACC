@@ -10,7 +10,7 @@ Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can 
 
 Please type any target lineage under the corresponding drop-down menu. Select at least one group, though multiple groups can be simultaneously selected. On a side note, data can be duplicated depending on the combination of lineages. For instance, if Chordates and Anura are selected simultaneously, data for Anura will be shown duplicated in the graph and descriptive statistics.
 
-```{r}
+```{r echo=FALSE}
 library(DT)
 datatable(iris, class = 'cell-border stripe')
 ```
