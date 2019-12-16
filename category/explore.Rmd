@@ -6,33 +6,5 @@ output:
     keep_md: true
 ---
 
-Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can be retrieved for either haploid (*N*) or diploid (*2N*) chromosome counts. All lineages with chromosome counts are listed below.
 
-Please type any target lineage under the corresponding drop-down menu. Select at least one group, though multiple groups can be simultaneously selected. On a side note, data can be duplicated depending on the combination of lineages. For instance, if Chordates and Anura are selected simultaneously, data for Anura will be shown duplicated in the graph and descriptive statistics.
-
-```{r echo=FALSE}
-library(DT)
-ACC<-read.csv('ACCDB_24-Aug-2019_00.31.csv')
-#datatable(iris, class = 'cell-border stripe')
-DT::datatable(ACC[,-c(1,2,12)],rownames = F,
-                  extensions = 'Buttons',
-                  filter = list(position = 'top', clear = FALSE),
-                  options = list(
-                    dom = 'Bfrtip',
-                    rownames= FALSE,
-                    buttons = 
-                      list(
-                        list(
-                          extend = 'csv',
-                          filename= 'ACCDB_download',
-                          buttons = c('csv'),
-                          text = "Download CSV file",
-                          exportOptions = list(
-                            modifiers = list(page = "selected")
-                          )
-                        ))
-                  )
-)
-
-
-```
+Data from the **ACC** can be easily downloaded from this website. The dataset can be filtered by taxonomic names or haploid/diploid counts. Multiple filters can be applied simultaneously to the database.
