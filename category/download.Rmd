@@ -1,6 +1,9 @@
 ---
 layout: category
 title: Download
+output:
+  html_document:
+    keep_md: true
 ---
 
 
