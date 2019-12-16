@@ -16,3 +16,4 @@ datatable(iris, class = 'cell-border stripe')
 ```
 
 
+[Link title]({{ site.baseurl }}{% link page/index.html %})
