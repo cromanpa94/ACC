@@ -1,11 +1,9 @@
 ---
 layout: category
-title: test
+title: Explore
 output:
   html_document:
     keep_md: true
-sidebar_link: false
-
 ---
 
 Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can be retrieved for either haploid (*N*) or diploid (*2N*) chromosome counts. All lineages with chromosome counts are listed below.
@@ -14,7 +12,7 @@ Please type any target lineage under the corresponding drop-down menu. Select at
 
 ```{r}
 library(DT)
-datatable(head(iris), class = 'cell-border stripe')
+datatable(iris, class = 'cell-border stripe')
 ```
 
 
