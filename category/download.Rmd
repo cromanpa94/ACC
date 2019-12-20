@@ -11,11 +11,11 @@ Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can 
 Please type any target lineage under the corresponding drop-down menu. Select at least one group, though multiple groups can be simultaneously selected. On a side note, data can be duplicated depending on the combination of lineages. For instance, if Chordates and Anura are selected simultaneously, data for Anura will be shown duplicated in the graph and descriptive statistics.
 
 
-```{r echo=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(DT)
-ACC<-read.csv('ACCDB_24-Aug-2019_00.31.csv')
+ACC<-read.csv('ACCDB_Dec2.csv')
 #datatable(iris, class = 'cell-border stripe')
-DT::datatable(ACC[,-c(1,2,12)],rownames = F,
+DT::datatable(ACC[,-c(1,13)],rownames = F,
                   extensions = 'Buttons',
                   filter = list(position = 'top', clear = FALSE),
                   options = list(
