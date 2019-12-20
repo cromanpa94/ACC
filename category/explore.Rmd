@@ -9,15 +9,92 @@ output:
 
 Data from the **ACC** can be easily downloaded from this website. The dataset can be filtered by taxonomic names or haploid/diploid counts. Multiple filters can be applied simultaneously to the database.
 
-Testing
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(scales)
+library(stringr)
+library(bsselectR)
+library(tidyverse)
+
+df <- read.csv("ACCDB_Dec2.csv")
+levels_target<- colnames(df)[1:7]
+
+plots_CC<-function(y){
+resulting_ds_level<-df[, c("curated_roundup_N",  levels_target[y] ),]
+colnames(resulting_ds_level)<-c("Count", "Level")
+resulting_ds_level$Count<-as.character(resulting_ds_level$Count)
+total_levels<-sort(unique(as.vector( resulting_ds_level$Level  )))
+
+plots <- lapply(seq_along(total_levels), function(x) {
+  
+  state = filter(resulting_ds_level, Level == total_levels[x])
+  counts<-data.frame("counts"=as.numeric(unlist(strsplit(state$Count, ","))))
+  
+  if( length(unique(counts[,1])) > 20 ){
+    
+    p<- ggplot(counts, aes(counts, fill = cut(counts, 5))) +
+      geom_histogram(aes(y = (..count..)/sum(..count..)),show.legend = FALSE) +
+      theme_minimal() +
+      labs(x = "Number (n)", y = "Frequency")+
+      scale_fill_discrete(h = c(180, 360), c = 150, l = 80)
+    p
+    
+  }
+})
+
+paths <- paste0(total_levels, "_", levels_target[y],".png")
+dir.create("plots")
+pwalk(list(paths, plots), ggsave, path = "plots", dpi = 300)
+files_target<-list.files("plots", full.names = TRUE)
+files_target<-files_target[grep(levels_target[y], files_target)]
+state_plots <- paste0(files_target)
+names(state_plots) <- str_replace_all(state_plots, 
+                                      c("\\.png" = "", 
+                                        "plots/" = ""))
+names(state_plots) <- gsub("\\_.*","",names(state_plots))
 
 
-```{r out.width='100%', echo=FALSE}
-library(leaflet)
-leaflet() %>% addTiles() %>%
-  setView(-93.65, 42.0285, zoom = 17) %>%
-  addPopups(
-    -93.65, 42.0285,
-    'Here is the <b>Department of Statistics</b>, ISU'
-  )
+bsselect(state_plots, type = "img", 
+         live_search = TRUE, show_tick = TRUE)
+}
+
 ```
+
+
+### Kingdom
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+plots_CC(1)
+```
+
+### Phylum
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+plots_CC(2)
+```
+
+### Class
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+plots_CC(3)
+```
+
+### Order
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+plots_CC(4)
+```
+
+### Family
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+plots_CC(5)
+```
+
+### Genus
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+plots_CC(6)
+```
+
+
+
+
+
+
+
+
