@@ -371,205 +371,108 @@ summary {
 <p>Release 1.0.1.</p>
 </div>
 <p>Phylum-level summary of chromosome counts deposited in the current release of the ACCDB. Below we indicate for each phylum (i) the total number of described species, (ii) the number of species with chromosome counts in the ACCDB, (iii) the percent of species with counts relative to the total clade richness, (iv) and whether ACCDB counts have been manually curated.</p>
+<pre class="r"><code>knitr::kable(head(mtcars))</code></pre>
 <table>
 <thead>
 <tr class="header">
-<th align="left">Phylum</th>
-<th align="center">Total richness</th>
-<th align="center">Species in ACC</th>
-<th align="center">Richness in ACC (%)</th>
-<th align="center">Curated</th>
+<th></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+<th align="right">am</th>
+<th align="right">gear</th>
+<th align="right">carb</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Acoela</td>
-<td align="center">140</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
+<td>Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.620</td>
+<td align="right">16.46</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
 </tr>
 <tr class="even">
-<td align="left">Arthropoda</td>
-<td align="center">1302809</td>
-<td align="center">9762</td>
-<td align="center">0.7</td>
-<td align="center">TRUE</td>
+<td>Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.875</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
 </tr>
 <tr class="odd">
-<td align="left">Brachiopoda</td>
-<td align="center">392</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
+<td>Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+<td align="right">2.320</td>
+<td align="right">18.61</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">1</td>
 </tr>
 <tr class="even">
-<td align="left">Bryozoa</td>
-<td align="center">6008</td>
-<td align="center">2</td>
-<td align="center">0.0</td>
-<td align="center">TRUE</td>
+<td>Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
 </tr>
 <tr class="odd">
-<td align="left">Chaetognatha</td>
-<td align="center">170</td>
-<td align="center">4</td>
-<td align="center">2.4</td>
-<td align="center">TRUE</td>
+<td>Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">2</td>
 </tr>
 <tr class="even">
-<td align="left">Chordata</td>
-<td align="center">85423</td>
-<td align="center">4146</td>
-<td align="center">4.9</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="left">Cnidaria</td>
-<td align="center">10203</td>
-<td align="center">18</td>
-<td align="center">0.2</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="even">
-<td align="left">Ctenophora</td>
-<td align="center">187</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="left">Echinodermata</td>
-<td align="center">7550</td>
-<td align="center">26</td>
-<td align="center">0.3</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="even">
-<td align="left">Entoprocta</td>
-<td align="center">171</td>
-<td align="center">2</td>
-<td align="center">1.2</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="left">Gastrotricha</td>
-<td align="center">794</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
-</tr>
-<tr class="even">
-<td align="left">Gnathostomulida</td>
-<td align="center">97</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="left">Hemichordata</td>
-<td align="center">103</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
-</tr>
-<tr class="even">
-<td align="left">Kinorhyncha</td>
-<td align="center">196</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="left">Mollusca</td>
-<td align="center">84977</td>
-<td align="center">139</td>
-<td align="center">0.2</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="even">
-<td align="left">Nematoda</td>
-<td align="center">25033</td>
-<td align="center">35</td>
-<td align="center">0.1</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="left">Nematomorpha</td>
-<td align="center">339</td>
-<td align="center">7</td>
-<td align="center">2.1</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="even">
-<td align="left">Nemertea</td>
-<td align="center">1358</td>
-<td align="center">10</td>
-<td align="center">0.7</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="left">Onychophora</td>
-<td align="center">183</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
-</tr>
-<tr class="even">
-<td align="left">Phoronida</td>
-<td align="center">16</td>
-<td align="center">2</td>
-<td align="center">12.5</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="left">Placozoa</td>
-<td align="center">1</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
-</tr>
-<tr class="even">
-<td align="left">Platyhelminthes</td>
-<td align="center">29487</td>
-<td align="center">309</td>
-<td align="center">1.0</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="left">Porifera</td>
-<td align="center">8659</td>
-<td align="center">8</td>
-<td align="center">0.1</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="even">
-<td align="left">Rotifera</td>
-<td align="center">2049</td>
-<td align="center">4</td>
-<td align="center">0.2</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="left">Sipuncula</td>
-<td align="center">205</td>
-<td align="center">3</td>
-<td align="center">1.5</td>
-<td align="center">TRUE</td>
-</tr>
-<tr class="even">
-<td align="left">Tardigrada</td>
-<td align="center">1167</td>
-<td align="center">1</td>
-<td align="center">0.1</td>
-<td align="center">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="left">Xenoturbellida</td>
-<td align="center">2</td>
-<td align="center">0</td>
-<td align="center">0.0</td>
-<td align="center">FALSE</td>
+<td>Valiant</td>
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225</td>
+<td align="right">105</td>
+<td align="right">2.76</td>
+<td align="right">3.460</td>
+<td align="right">20.22</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
 </tr>
 </tbody>
 </table>

@@ -92,11 +92,19 @@ table<-read.csv("ACCDB_Dec2.csv")
 ```
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 library(knitr)
   kable(df, col.names = c("Phylum","Total richness","Species in ACC",
                                 "Richness in ACC (%)", "Curated"),
          align=c("l",rep('c', 4)))
 
 ```
+
+
+
+```{r}
+knitr::kable(head(mtcars))
+
+```
+
 
