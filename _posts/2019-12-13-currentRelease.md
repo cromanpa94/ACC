@@ -15,23 +15,36 @@ Phylum-level summary of chromosome counts deposited in the current release of th
 
 
 
+| Phylum | Richness | Counts | ACCDB | Curated |
+|-----------------|:--------:|:------:|:-----:|:-------:|
+| Acoela | 140 | 0 | 0 | FALSE |
+| Arthropoda | 1302809 | 9762 | 0.7 | TRUE |
+| Brachiopoda | 392 | 0 | 0 | FALSE |
+| Bryozoa | 6008 | 2 | 0 | TRUE |
+| Chaetognatha | 170 | 4 | 2.4 | TRUE |
+| Chordata | 85423 | 4146 | 4.9 | TRUE |
+| Cnidaria | 10203 | 18 | 0.2 | TRUE |
+| Ctenophora | 187 | 0 | 0 | FALSE |
+| Echinodermata | 7550 | 26 | 0.3 | TRUE |
+| Entoprocta | 171 | 2 | 1.2 | TRUE |
+| Gastrotricha | 794 | 0 | 0 | FALSE |
+| Gnathostomulida | 97 | 0 | 0 | FALSE |
+| Hemichordata | 103 | 0 | 0 | FALSE |
+| Kinorhyncha | 196 | 0 | 0 | FALSE |
+| Mollusca | 84977 | 139 | 0.2 | TRUE |
+| Nematoda | 25033 | 35 | 0.1 | TRUE |
+| Nematomorpha | 339 | 7 | 2.1 | TRUE |
+| Nemertea | 1358 | 10 | 0.7 | TRUE |
+| Onychophora | 183 | 0 | 0 | FALSE |
+| Phoronida | 16 | 2 | 12.5 | TRUE |
+| Placozoa | 1 | 0 | 0 | FALSE |
+| Platyhelminthes | 29487 | 309 | 1 | TRUE |
+| Porifera | 8659 | 8 | 0.1 | TRUE |
+| Rotifera | 2049 | 4 | 0.2 | TRUE |
+| Sipuncula | 205 | 3 | 1.5 | TRUE |
+| Tardigrada | 1167 | 1 | 0.1 | FALSE |
+| Xenoturbellida | 2 | 0 | 0 | FALSE |
 
 
-
-
-
-
-```r
-knitr::kable(head(mtcars))
-```
-
-                      mpg   cyl   disp    hp   drat      wt    qsec   vs   am   gear   carb
-------------------  -----  ----  -----  ----  -----  ------  ------  ---  ---  -----  -----
-Mazda RX4            21.0     6    160   110   3.90   2.620   16.46    0    1      4      4
-Mazda RX4 Wag        21.0     6    160   110   3.90   2.875   17.02    0    1      4      4
-Datsun 710           22.8     4    108    93   3.85   2.320   18.61    1    1      4      1
-Hornet 4 Drive       21.4     6    258   110   3.08   3.215   19.44    1    0      3      1
-Hornet Sportabout    18.7     8    360   175   3.15   3.440   17.02    0    0      3      2
-Valiant              18.1     6    225   105   2.76   3.460   20.22    1    0      3      1
 
 
