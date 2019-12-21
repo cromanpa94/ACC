@@ -6,8 +6,13 @@ output:
     keep_md: true
 ---
 
+Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can be retrieved for either haploid (*N*) or diploid (*2N*) chromosome counts. All lineages with chromosome counts are listed below.
 
-Data from the **ACC** can be easily downloaded from this website. The dataset can be filtered by taxonomic names or haploid/diploid counts. Multiple filters can be applied simultaneously to the database.
+Please type any target lineage under the corresponding drop-down menu. Select at least one group, though multiple groups can be simultaneously selected. On a side note, data can be duplicated depending on the combination of lineages. For instance, if Chordates and Anura are selected simultaneously, data for Anura will be shown duplicated in the graph and descriptive statistics.
+
+
+Plots below are based on the inferred n (2N/2) with decimal numbers rounded up. 
+Histograms are shown for lineages with more than 10 unique counts. 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -24,13 +29,14 @@ resulting_ds_level<-df[, c("curated_roundup_N",  levels_target[y] ),]
 colnames(resulting_ds_level)<-c("Count", "Level")
 resulting_ds_level$Count<-as.character(resulting_ds_level$Count)
 total_levels<-sort(unique(as.vector( resulting_ds_level$Level  )))
+total_levels<-total_levels[!total_levels %in% c("Catenulida", "")]
 
 plots <- lapply(seq_along(total_levels), function(x) {
   
   state = filter(resulting_ds_level, Level == total_levels[x])
   counts<-data.frame("counts"=as.numeric(unlist(strsplit(state$Count, ","))))
   
-  if( length(unique(counts[,1])) > 20 ){
+  if( length(unique(counts[,1])) > 10 ){
     
     p<- ggplot(counts, aes(counts, fill = cut(counts, 5))) +
       geom_histogram(aes(y = (..count..)/sum(..count..)),show.legend = FALSE) +
@@ -62,31 +68,44 @@ bsselect(state_plots, type = "img",
 
 
 ### Kingdom
+
+Distribution of haploid numbers for *Animals*.  
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(1)
 ```
 
 ### Phylum
+Distribution of haploid numbers for different Animal *phyla*.  
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(2)
 ```
 
 ### Class
+Distribution of haploid numbers for different Animal *classes*.  
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(3)
 ```
 
 ### Order
+Distribution of haploid numbers for different Animal *orders*.  
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(4)
 ```
 
 ### Family
+Distribution of haploid numbers for different Animal *families*.  
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(5)
 ```
 
 ### Genus
+Distribution of haploid numbers for different Animal *genera*.  
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(6)
 ```
