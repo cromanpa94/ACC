@@ -14,7 +14,7 @@ Data from the **ACC** can be easily downloaded from this website. The dataset ca
 library(DT)
 ACC<-read.csv('ACCDB_Dec2.csv')
 #datatable(iris, class = 'cell-border stripe')
-DT::datatable(ACC[,-c(1,13)],rownames = F,
+DT::datatable(ACC[,-c(1,8,10,12,13)],rownames = F,
                   extensions = 'Buttons',
                   filter = list(position = 'top', clear = FALSE),
                   options = list(
