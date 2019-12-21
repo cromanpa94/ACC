@@ -3,17 +3,13 @@ layout: category
 title: Contribute
 ---
 
-Contributions to the **ACC** are highly encouraged since this is a community resource that aims to provide easy access to chromosome counts for the different animal lineages.
+Since the **ACC** is a community resource, contributions are highly encouraged.
+Please do not hesitate to use the link below to submit (i) new counts for existing species, (ii) new counts for currently unsampled species in the ACCDB, or even (iii) new references to existing counts in the database.
 
-Do not hesitate to use the uploader on this website to submit (i) new counts for existing species, (ii) new counts for currently unsampled species in the ACCDB, or even (iii) new references to existing counts in the database.
+We ask for some minimal details on any submission: (i) your contact information (full name, email address), and (ii) chromosome counts (Species name, 2N, N, Reference).
 
-We ask you to follow some minimal guidelines before submitting any chromosome counts. We will manually curate any document containing (i) your contact information (full name, email address), and (ii) chromosome counts (Species name, 2N, N, Reference).
+Thank you so much for your contributions!
 
-An example can be found here:
+# [We're still working on the user submissions. Please use **contact us** instead if you have information that would like to include into the database]
 
-*Insert link*
-
-Please make sure that the file you are about to upload includes both your contact information and chromosome counts.
-
-Thank you so much for your contribution to the **ACC** !
 
