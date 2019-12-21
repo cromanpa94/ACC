@@ -55,42 +55,41 @@ names(state_plots) <- gsub("\\_.*","",names(state_plots))
 
 
 bsselect(state_plots, type = "img", 
-         live_search = TRUE, show_tick = TRUE)
+         live_search = TRUE, show_tick = TRUE, height = 10)
 }
 
 ```
 
 
 ### Kingdom
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(1)
 ```
 
 ### Phylum
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(2)
 ```
 
 ### Class
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(3)
 ```
 
 ### Order
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(4)
 ```
 
 ### Family
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(5)
 ```
 
 ### Genus
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(6)
 ```
-
 
 
 
