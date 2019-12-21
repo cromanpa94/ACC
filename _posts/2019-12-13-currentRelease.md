@@ -1,5 +1,6 @@
 ---
 layout: post
+excerpt_separator: <!--end_excerpt-->
 title: Current release
 output:
   html_document:
@@ -45,6 +46,7 @@ Phylum-level summary of chromosome counts deposited in the current release of th
 | Tardigrada | 1167 | 1 | 0.1 | FALSE |
 | Xenoturbellida | 2 | 0 | 0 | FALSE |
 
+<!--end_excerpt-->
 
 
 
