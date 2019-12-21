@@ -11,9 +11,15 @@ Data from the **ACC** can be easily downloaded from this website. The dataset ca
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+firstup <- function(x) {
+  substr(x, 1, 1) <- toupper(substr(x, 1, 1))
+  x
+}
 library(DT)
 ACC<-read.csv('ACCDB_Dec2.csv')
-#datatable(iris, class = 'cell-border stripe')
+colnames(ACC)<-firstup(colnames(ACC))
+colnames(ACC)[c(7,9,11)]<-c("Species","2N", "N")
+
 DT::datatable(ACC[,-c(1,8,10,12,13)],rownames = F,
                   extensions = 'Buttons',
                   filter = list(position = 'top', clear = FALSE),
