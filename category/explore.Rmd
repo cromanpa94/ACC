@@ -5,6 +5,7 @@ output:
   html_document:
     keep_md: true
 ---
+[Home](/ACC)
 
 Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can be retrieved for haploid (*N*) chromosome counts.Plots below are based on the inferred n (**2N**/2) with decimal numbers rounded up. Histograms are shown for lineages with more than 10 unique counts. 
 
@@ -106,6 +107,9 @@ Distribution of haploid numbers for different Animal *genera*.
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
 plots_CC(6)
 ```
+  
+
+[Home](/ACC)
 
 
 

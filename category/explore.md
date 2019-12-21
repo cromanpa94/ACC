@@ -5,6 +5,7 @@ output:
   html_document:
     keep_md: true
 ---
+[Home](/ACC)
 
 Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can be retrieved for haploid (*N*) chromosome counts.Plots below are based on the inferred n (**2N**/2) with decimal numbers rounded up. Histograms are shown for lineages with more than 10 unique counts. 
 
@@ -20,25 +21,25 @@ Distribution of haploid numbers for *Animals*.
 
 <!--html_preserve-->
 <html>
-<select id="iLU3rmaHS8" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Animalia_kingdom.png">Animalia</option></select>
-<img src="plots/Animalia_kingdom.png" name="fRhAPBR0aq" height="500" width="100%"/>
+<select id="N9TVm6ntHO" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Animalia_kingdom.png">Animalia</option></select>
+<img src="plots/Animalia_kingdom.png" name="hcXl2KI69z" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#iLU3rmaHS8").change(function(){
-                 $("img[name=fRhAPBR0aq]").attr("src",$(this).val());
+                 $("#N9TVm6ntHO").change(function(){
+                 $("img[name=hcXl2KI69z]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-7d3eb6bd1d087b7b3c2f" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-7d3eb6bd1d087b7b3c2f">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<div id="htmlwidget-a49edad0161ae029bb58" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-a49edad0161ae029bb58">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 ### Phylum
 Distribution of haploid numbers for different Animal *phyla*.  
 
 <!--html_preserve-->
 <html>
-<select id="D2jnVq6GCG" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Annelida_phylum.png">Annelida</option>
+<select id="CXaeUT8kGy" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Annelida_phylum.png">Annelida</option>
 <option value="plots/Arthropoda_phylum.png">Arthropoda</option>
 <option value="plots/Chordata_phylum.png">Chordata</option>
 <option value="plots/Cnidaria_phylum.png">Cnidaria</option>
@@ -49,24 +50,24 @@ Distribution of haploid numbers for different Animal *phyla*.
 <option value="plots/Platyhelminthes_phylum.png">Platyhelminthes</option>
 <option value="plots/Rotifera_phylum.png">Rotifera</option>
 <option value="plots/Xenacoelomorpha_phylum.png">Xenacoelomorpha</option></select>
-<img src="plots/Annelida_phylum.png" name="PwfWLV9JZy" height="500" width="100%"/>
+<img src="plots/Annelida_phylum.png" name="ZaG6v6PusI" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#D2jnVq6GCG").change(function(){
-                 $("img[name=PwfWLV9JZy]").attr("src",$(this).val());
+                 $("#CXaeUT8kGy").change(function(){
+                 $("img[name=ZaG6v6PusI]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-9997e0d2d4c748ef0075" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-9997e0d2d4c748ef0075">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<div id="htmlwidget-83cc79c81e6c52ee4e9e" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-83cc79c81e6c52ee4e9e">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 ### Class
 Distribution of haploid numbers for different Animal *classes*.  
 
 <!--html_preserve-->
 <html>
-<select id="eHhfkJVI7h" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acoela_class.png">Acoela</option>
+<select id="gUa9rf2tzP" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acoela_class.png">Acoela</option>
 <option value="plots/Actinopterygii_class.png">Actinopterygii</option>
 <option value="plots/Amphibia_class.png">Amphibia</option>
 <option value="plots/Arachnida_class.png">Arachnida</option>
@@ -91,24 +92,24 @@ Distribution of haploid numbers for different Animal *classes*.
 <option value="plots/Rhabditophora_class.png">Rhabditophora</option>
 <option value="plots/Secernentea_class.png">Secernentea</option>
 <option value="plots/Trematoda_class.png">Trematoda</option></select>
-<img src="plots/Acoela_class.png" name="eLqP3Gp4rk" height="500" width="100%"/>
+<img src="plots/Acoela_class.png" name="KmgI4FIXva" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#eHhfkJVI7h").change(function(){
-                 $("img[name=eLqP3Gp4rk]").attr("src",$(this).val());
+                 $("#gUa9rf2tzP").change(function(){
+                 $("img[name=KmgI4FIXva]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-4b1b68578e63f0c5daeb" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-4b1b68578e63f0c5daeb">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<div id="htmlwidget-d8a43900e28ac50cc467" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-d8a43900e28ac50cc467">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 ### Order
 Distribution of haploid numbers for different Animal *orders*.  
 
 <!--html_preserve-->
 <html>
-<select id="1u5vid05Vs" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acoela_order.png">Acoela</option>
+<select id="RQuUtyCz4C" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acoela_order.png">Acoela</option>
 <option value="plots/Anura_order.png">Anura</option>
 <option value="plots/Araneae_order.png">Araneae</option>
 <option value="plots/Artiodactyla_order.png">Artiodactyla</option>
@@ -168,24 +169,24 @@ Distribution of haploid numbers for different Animal *orders*.
 <option value="plots/Trichoptera_order.png">Trichoptera</option>
 <option value="plots/Tricladida_order.png">Tricladida</option>
 <option value="plots/Trombidiformes_order.png">Trombidiformes</option></select>
-<img src="plots/Acoela_order.png" name="sJEH9NWWRv" height="500" width="100%"/>
+<img src="plots/Acoela_order.png" name="YjKS1MSfuu" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#1u5vid05Vs").change(function(){
-                 $("img[name=sJEH9NWWRv]").attr("src",$(this).val());
+                 $("#RQuUtyCz4C").change(function(){
+                 $("img[name=YjKS1MSfuu]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-e5e75edd068fe80c9599" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-e5e75edd068fe80c9599">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<div id="htmlwidget-accf64b9617c03085fd6" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-accf64b9617c03085fd6">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 ### Family
 Distribution of haploid numbers for different Animal *families*.  
 
 <!--html_preserve-->
 <html>
-<select id="wh09skmqTB" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acrididae_family.png">Acrididae</option>
+<select id="jIzWxZXhQa" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acrididae_family.png">Acrididae</option>
 <option value="plots/Agelenidae_family.png">Agelenidae</option>
 <option value="plots/Aphididae_family.png">Aphididae</option>
 <option value="plots/Aphrophoridae_family.png">Aphrophoridae</option>
@@ -267,24 +268,24 @@ Distribution of haploid numbers for different Animal *families*.
 <option value="plots/Toxopneustidae_family.png">Toxopneustidae</option>
 <option value="plots/Vespertilionidae_family.png">Vespertilionidae</option>
 <option value="plots/Vespidae_family.png">Vespidae</option></select>
-<img src="plots/Acrididae_family.png" name="iNqS5nShK9" height="500" width="100%"/>
+<img src="plots/Acrididae_family.png" name="1mNGErFqlx" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#wh09skmqTB").change(function(){
-                 $("img[name=iNqS5nShK9]").attr("src",$(this).val());
+                 $("#jIzWxZXhQa").change(function(){
+                 $("img[name=1mNGErFqlx]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-41057b5ffcfa7ada8090" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-41057b5ffcfa7ada8090">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<div id="htmlwidget-4a5da588393da2335b26" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-4a5da588393da2335b26">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 ### Genus
 Distribution of haploid numbers for different Animal *genera*.  
 
 <!--html_preserve-->
 <html>
-<select id="3z9pH1XlyH" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Agrodiaetus_genus.png">Agrodiaetus</option>
+<select id="32gSjEyXfi" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Agrodiaetus_genus.png">Agrodiaetus</option>
 <option value="plots/Amara_genus.png">Amara</option>
 <option value="plots/Aphaenogaster_genus.png">Aphaenogaster</option>
 <option value="plots/Apiomorpha_genus.png">Apiomorpha</option>
@@ -329,17 +330,20 @@ Distribution of haploid numbers for different Animal *genera*.
 <option value="plots/Torpedo_genus.png">Torpedo</option>
 <option value="plots/Toxocara_genus.png">Toxocara</option>
 <option value="plots/Turdus_genus.png">Turdus</option></select>
-<img src="plots/Agrodiaetus_genus.png" name="astrXhIa0I" height="500" width="100%"/>
+<img src="plots/Agrodiaetus_genus.png" name="zGTlsJtg6o" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#3z9pH1XlyH").change(function(){
-                 $("img[name=astrXhIa0I]").attr("src",$(this).val());
+                 $("#32gSjEyXfi").change(function(){
+                 $("img[name=zGTlsJtg6o]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-d7b53e3a9dc5239b96df" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-d7b53e3a9dc5239b96df">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<div id="htmlwidget-39ab645f9637f7804d47" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-39ab645f9637f7804d47">{"x":[],"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+  
+
+[Home](/ACC)
 
 
 
