@@ -45,7 +45,8 @@ plots <- lapply(seq_along(total_levels), function(x) {
     annotations <- data.frame(
   xpos = Inf,
   ypos =  Inf,
-  annotateText = paste0("N=",length(counts$counts), 
+  annotateText = paste0(toupper(total_levels[x]),
+                        "\n N=",length(counts$counts), 
                         "\n Species=", length(state$Count), 
                         "\n [0-100%]=", paste0(min(counts$counts),"-",max(counts$counts)),
                         "\n [25-75%]=", paste0(quantile(counts$counts)[c(2,4)], collapse = "-"),
