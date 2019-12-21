@@ -10,6 +10,6 @@ We ask for some minimal details on any submission: (i) your contact information 
 
 Thank you so much for your contributions!
 
-##### [We're still working on the user submissions. Please use **contact us** instead if you have information that would like to include into the database]
+##### We're still working on the user submission plataform. Please use [Contact us](/category/contact) if you have information that would like to be include into the database.
 
 
