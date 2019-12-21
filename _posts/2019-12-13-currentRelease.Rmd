@@ -1,0 +1,102 @@
+---
+layout: post
+title: Current release
+output:
+  html_document:
+    keep_md: true
+---
+
+<div class="message">
+  Release 1.0.1.
+</div>
+
+Phylum-level summary of chromosome counts deposited in the current release of the ACCDB. Below we indicate for each phylum (i) the total number of described species, (ii) the number of species with chromosome counts in the ACCDB, (iii) the percent of species with counts relative to the total clade richness, (iv) and whether ACCDB counts have been manually curated.  
+
+
+```{r echo=FALSE}
+ 
+table<-read.csv("ACCDB_Dec2.csv")
+
+ phylum<-c( 'Acoela',
+  'Arthropoda',
+  'Brachiopoda',
+  'Bryozoa',
+  'Chaetognatha',
+  'Chordata',
+  'Cnidaria',
+  'Ctenophora',
+  'Echinodermata',
+  'Entoprocta',
+  'Gastrotricha',
+  'Gnathostomulida',
+  'Hemichordata',
+  'Kinorhyncha',
+  'Mollusca',
+  'Nematoda',
+  'Nematomorpha',
+  'Nemertea',
+  'Onychophora',
+  'Phoronida',
+  'Placozoa',
+  'Platyhelminthes',
+  'Porifera',
+  'Rotifera',
+  'Sipuncula',
+  'Tardigrada',
+  'Xenoturbellida')
+  
+ 
+ phylum_richness<-c(
+ 140,
+ 1302809,
+ 392,
+ 6008,
+ 170,
+ 85423,
+ 10203,
+ 187,
+ 7550,
+ 171,
+ 794,
+ 97,
+ 103,
+ 196,
+ 84977,
+ 25033,
+ 339,
+ 1358,
+ 183,
+ 16,
+ 1,
+ 29487,
+ 8659,
+ 2049,
+ 205,
+ 1167,
+ 2)
+
+  
+  CCounts_phylum<- unlist(lapply(seq_along(phylum), function(x){
+    dim(table[na.omit(table$phylum == phylum[x]),])[1]
+  }))
+ 
+  
+  df <- data.frame(
+    "Phylum" = phylum,
+    "Total richness" = phylum_richness,
+    'Species in ACC' = CCounts_phylum,
+    'Richness in ACC (%)' = round(CCounts_phylum/phylum_richness,3)*100,
+    "Curated" = c(F,T,F,T,T,T,T,F,T,T,F,F,F,F,T,T,T,T,F,T,F,T,T,T,T,F,F) ,
+    stringsAsFactors = FALSE
+  )
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+  kable(df, col.names = c("Phylum","Total richness","Species in ACC",
+                                "Richness in ACC (%)", "Curated"),
+         align=c("l",rep('c', 4)))
+
+```
+
