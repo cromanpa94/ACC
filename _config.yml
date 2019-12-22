@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            The ACC
 tagline:          'The Animal Chromosome Count database'
-description:      'A database of animal chromosome counts.'
+description:      'A database of animal chromosome counts'
 url:              https://cromanpa94.github.io/ACC/
 baseurl:          '/ACC'
                   # the optional subpath of your site, e.g. "/blog"
