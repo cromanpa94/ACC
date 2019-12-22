@@ -11,12 +11,12 @@ output:
   Release 1.0.1.
 </div>
 
-Phylum-level summary of chromosome counts deposited in the current release of the ACCDB. Below we indicate for each phylum (i) the total number of described species, (ii) the number of species with chromosome counts in the ACCDB, (iii) the percent of species with counts relative to the total clade richness, (iv) and whether ACCDB counts have been manually curated.  
+Phylum-level summary of chromosome counts deposited in the current release of the **ACC**. Below we indicate for each phylum (i) the total number of described species, (ii) the number of species with chromosome counts in the **ACC**, (iii) the percent of species with counts relative to the total clade richness, (iv) and whether **ACC** counts have been manually curated.  
 
 
 
 
-| Phylum | Richness | Counts | ACCDB (%) | Curated |
+| Phylum | Richness | Counts | ACC (%) | Curated |
 |-----------------|:--------:|:------:|:-----:|:-------:|
 | Acoela | 140 | 0 | 0 | FALSE |
 | Arthropoda | 1302809 | 9762 | 0.7 | TRUE |
