@@ -16,7 +16,7 @@ Phylum-level summary of chromosome counts deposited in the current release of th
 
 
 
-| Phylum | Richness | Counts | ACCDB | Curated |
+| Phylum | Richness | Counts | ACCDB (%) | Curated |
 |-----------------|:--------:|:------:|:-----:|:-------:|
 | Acoela | 140 | 0 | 0 | FALSE |
 | Arthropoda | 1302809 | 9762 | 0.7 | TRUE |
