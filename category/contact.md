@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Contact us
+title: Contact Us
 sidebar_sort_order: 123
 
 ---
