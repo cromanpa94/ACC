@@ -7,9 +7,9 @@ output:
 ---
 [Home](/ACC)
 
-Below is a quick graphical explorer of the **ACC**. Chromosome count graphs can be retrieved for haploid (*N*) chromosome counts.Plots below are based on the inferred n (**2N**/2) with decimal numbers rounded up. Histograms are shown for lineages with more than 10 unique counts. 
+Histograms summarizing chromosomal counts (i.e., distribution of haploid counts, N) by taxonomic level can be found below. To select target lineage, type taxonomic information or select using drop-down menu.
 
-Please type (or select) any target lineage under the corresponding drop-down menu. 
+#### Note: Haploid counts are based on inferred N (2N/2) with decimal numbers rounded up.
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
