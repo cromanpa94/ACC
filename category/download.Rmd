@@ -7,7 +7,7 @@ output:
 ---
 [Home](/ACC)
 
-Easily download data from the ACC below. Before downloading, you can apply multiple filters (e.g., taxonomic names, haploid/diploid count) to specify your request.
+Easily download data from the **ACC** below. Before downloading, you can apply multiple filters (e.g., taxonomic names, haploid/diploid count) to specify your request.
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
