@@ -3,7 +3,8 @@ layout: category
 title: Other databases
 ---
 
-Below is a short summary of chromosome count databases that are currently available. This list is not extensive nor restricted to animals only.  
+A list of existing chromosome count databases can be found below. This list is not extensive nor restricted to animals only.
+
 
 **Animals**  
 [Chromosomes of Russian mammals](http://www.bionet.nsc.ru/labs/chromosomes/intr_engl.htm)  
