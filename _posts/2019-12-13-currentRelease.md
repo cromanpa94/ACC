@@ -44,6 +44,7 @@ Here, is a phylum-level summary of current chromosome counts listed in the **ACC
 | Sipuncula | 205 | 3 | 1.5 | Yes |
 | Tardigrada | 1167 | 1 | 0.1 | No |
 | Xenoturbellida | 2 | 0 | 0 | No |
+
 <!--end_excerpt-->
 
 
