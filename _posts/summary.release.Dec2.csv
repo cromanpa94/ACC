@@ -1,6 +1,6 @@
-"Phylum","Richness","Counts","ACCDB","Curated"
+"Phylum","Total.richness","Species.in.ACC","Richness.in.ACC....","Curated"
 "Acoela",140,0,0,FALSE
-"Arthropoda",1302809,9762,0.7,TRUE
+"Arthropoda",1302809,9761,0.7,TRUE
 "Brachiopoda",392,0,0,FALSE
 "Bryozoa",6008,2,0,TRUE
 "Chaetognatha",170,4,2.4,TRUE
@@ -20,7 +20,7 @@
 "Onychophora",183,0,0,FALSE
 "Phoronida",16,2,12.5,TRUE
 "Placozoa",1,0,0,FALSE
-"Platyhelminthes",29487,309,1,TRUE
+"Platyhelminthes",29487,306,1,TRUE
 "Porifera",8659,8,0.1,TRUE
 "Rotifera",2049,4,0.2,TRUE
 "Sipuncula",205,3,1.5,TRUE
