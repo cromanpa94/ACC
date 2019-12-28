@@ -120,7 +120,7 @@ plots <- lapply(seq_along(total_levels), function(x) {
 
 p<- ggplot(counts, aes(counts)) +
   geom_histogram(aes(y = (..count..)/sum(..count..),
-                     fill = cut(counts, 5)
+                     #fill = cut(counts, 5)
                      ),
                      show.legend = FALSE) +
   theme_minimal() +
