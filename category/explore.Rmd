@@ -25,6 +25,67 @@ getmode <- function(v) {
 }
 
 
+##This function can be used to plot line plots for chromosome counts (similar to
+##the one in the main text). I'm not using it right now
+Plot_CC_distribution<-function(db=NULL, span=3,freqY=2, freqX=2, addY=5, addX=0,sizeT=3,annotations=annotations, color="black"){
+  
+  counts<-na.omit(as.numeric(unlist(lapply(seq_along(db), function(x) strsplit(as.character(db[x]),',')))))
+  cond<-as.data.frame(table(counts))
+  
+  ##Need to fill missing numbers with 0
+  expected<-seq(1,max(as.numeric(as.character(cond$counts))))
+  "%!in%" = Negate("%in%")
+  
+  missing<-cbind.data.frame(expected[which(expected %!in% as.character(cond$counts))],0)
+  names(missing)<-c("counts", "Freq"  )
+  names(cond)
+  cond<-rbind(missing,cond)
+  
+  custom_breaksx <- seq(0, max(as.numeric(cond$counts)), freqX)
+  custom_breaksy <- seq(0, c(max(as.numeric(as.character(cond$Freq)))), freqY)
+  
+  every_nth <- function(x, nth, empty = TRUE, inverse = FALSE){
+    if (!inverse) {
+      if(empty) {
+        x[1:nth == 1] <- ""
+        x
+      } else {
+        x[1:nth != 1]
+      }
+    } else {
+      if(empty) {
+        x[1:nth != 1] <- ""
+        x
+      } else {
+        x[1:nth == 1]
+      }
+    }
+  }
+  
+  p<-ggplot(cond, aes(x = as.numeric(counts), y = Freq, group = 1)) + geom_line(color=color) + 
+    #stat_peaks(colour = "black") +
+    #stat_peaks(geom = "text", colour = "black", vjust = -0.5,span = span)+
+    theme_bw() +
+    theme(axis.line = element_line(colour = "black"),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          panel.border = element_blank(),
+          panel.background = element_blank()) + 
+    scale_x_continuous(breaks = custom_breaksx,
+                       labels = every_nth(custom_breaksx, 4, inverse = TRUE),
+                       expand = c(0, 0), limits = c(0,max(as.numeric(as.character(cond$counts)))+addX)) + 
+    scale_y_continuous(breaks = custom_breaksy,
+                       labels = every_nth(custom_breaksy, 4, inverse = TRUE),
+                       expand = c(0, 0), limits = c(0,max(as.numeric(cond$Freq))+addY))+
+    labs(title="",  x ="Haploid Chromosome #", y = "Number of species") + 
+    theme(text=element_text(size=13,  family="Times New Roman"))+
+    geom_text(data=annotations,aes(x=xpos,y=ypos,hjust=hjustvar,vjust=vjustvar,label=annotateText),  size=sizeT)+ geom_line(color=color)
+  
+  p
+  
+}
+
+
 df <- read.csv("ACCDB_Dec2.csv")
 levels_target<- colnames(df)[1:7]
 
@@ -59,11 +120,13 @@ plots <- lapply(seq_along(total_levels), function(x) {
 
 p<- ggplot(counts, aes(counts)) +
   geom_histogram(aes(y = (..count..)/sum(..count..),
-                     fill = cut(counts, 5)),show.legend = FALSE) +
+                     #fill = cut(counts, 5)
+                     ),
+                     show.legend = FALSE) +
   theme_minimal() +
   labs(x = "Haploid number (n)", y = "Frequency")+
   scale_fill_discrete(h = c(180, 360), c = 150, l = 80)+
-  geom_text(data=annotations,aes(x=xpos,y=ypos,hjust=hjustvar,vjust=vjustvar,label=annotateText),  size=3)
+  geom_text(data=annotations,aes(x=xpos,y=ypos,hjust=hjustvar,vjust=vjustvar,label=annotateText),  size=2)
 
 p
 
