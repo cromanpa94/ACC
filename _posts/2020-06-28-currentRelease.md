@@ -8,7 +8,7 @@ output:
 ---
 
 <div class="message">
-  Release 1.0.0.
+  Release 1.0.1. (06/28/20)
 </div>
 
 Here, is a phylum-level summary of current chromosome counts listed in the **ACC**. We have indicated for each phylum (i) the total number of described species, (ii) the number of species with chromosome counts listed, (iii) a percentage of species counts relative to the total clade richness, and (iv) whether the counts have been manually curated.
