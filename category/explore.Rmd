@@ -86,7 +86,7 @@ Plot_CC_distribution<-function(db=NULL, span=3,freqY=2, freqX=2, addY=5, addX=0,
 }
 
 
-df <- read.csv("ACCDB_Dec2.csv")
+df <- read.csv("ACCDBJun28.csv")
 levels_target<- colnames(df)[1:7]
 
 plots_CC<-function(y){
@@ -94,11 +94,11 @@ resulting_ds_level<-df[, c("curated_roundup_N",  levels_target[y] ),]
 colnames(resulting_ds_level)<-c("Count", "Level")
 resulting_ds_level$Count<-as.character(resulting_ds_level$Count)
 total_levels<-sort(unique(as.vector( resulting_ds_level$Level  )))
-total_levels<-total_levels[!total_levels %in% c("Catenulida", "")]
+total_levels<-total_levels[!total_levels %in% c("Catenulida", ""," Catenulida", " Catenulida ")]
 
 plots <- lapply(seq_along(total_levels), function(x) {
   
-  state = filter(resulting_ds_level, Level == total_levels[x])
+  state = resulting_ds_level[resulting_ds_level$Level == total_levels[x],]
   counts<-data.frame("counts"=as.numeric(unlist(strsplit(state$Count, ","))))
   
   if( length(unique(counts[,1])) > 10 ){

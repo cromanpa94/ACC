@@ -16,7 +16,7 @@ firstup <- function(x) {
   x
 }
 library(DT)
-ACC<-read.csv('ACCDB_Dec2.csv')
+ACC<-read.csv('ACCDBJun28.csv')
 colnames(ACC)<-firstup(colnames(ACC))
 colnames(ACC)[c(7,9,11)]<-c("Species","2N", "N")
 
