@@ -7,7 +7,7 @@ output:
 ---
 [Home](/ACC)
 
-Easily download data from the **ACC** below. Before downloading, you can apply multiple filters (e.g., taxonomic names, haploid/diploid count) to specify your request.
+Easily download data from the **ACC** below. Before downloading, you can apply multiple filters (e.g., taxonomic names, haploid/diploid count) to specify your request. More columns are available under 'Column visibility'
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -20,26 +20,33 @@ ACC<-read.csv('ACCDBJun28.csv')
 colnames(ACC)<-firstup(colnames(ACC))
 colnames(ACC)[c(7,9,11)]<-c("Species","2N", "N")
 
-DT::datatable(ACC[,-c(1,8,10,12,13)],rownames = F,
-                  extensions = 'Buttons',
-                  filter = list(position = 'top', clear = FALSE),
-                  options = list(
-                    dom = 'Bfrtip',
-                    rownames= FALSE,
-                    buttons = 
-                      list(
-                        list(
-                          extend = 'csv',
-                          filename= 'ACCDB_download',
-                          buttons = c('csv'),
-                          text = "Download CSV file",
-                          exportOptions = list(
+stp<-ACC[,-c(1,8,10,12)]
+
+DT::datatable(stp, filter = 'top', rownames = FALSE, 
+                              extensions = list('ColReorder' = NULL, 
+                                                'RowReorder' = NULL, 
+                                                'Buttons' = NULL
+                                                ), 
+                              options = list(dom = 'Bfrtip', #scrollX = TRUE, autoWidth = TRUE, 
+                                             lengthMenu = list(c(10, 50, 100, -1), c('10', '50', '100', 'All')), 
+                                             #ColReorder = TRUE, 
+                                             rownames= FALSE,
+                                columnDefs = list(list(targets = c(0,1,8), visible = FALSE)),
+                                             #rowReorder = TRUE, 
+                                             buttons = list(
+                                                            list(extend = 'collection', 
+                                                                 buttons = c('csv', 'excel', 'pdf'), 
+                                                                 text = 'Download',
+                                                                 filename= 'ACCDB_download',
+                                                                 exportOptions = list(
                             modifiers = list(page = "selected")
-                          )
-                        ))
-                  )
-)
+                          )), 'colvis')))
+
+
+
+
 ```
+
 
 
 [Home](/ACC)
