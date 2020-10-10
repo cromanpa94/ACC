@@ -21,21 +21,22 @@ colnames(ACC)<-firstup(colnames(ACC))
 colnames(ACC)[c(7,9,11)]<-c("Species","2N", "N")
 
 stp<-ACC[,-c(1,8,10,12)]
+stp[,c(1:6)] <- lapply(stp[,c(1:6)], factor)
 
 DT::datatable(stp, filter = 'top', rownames = FALSE, 
-                              extensions = list('ColReorder' = NULL, 
-                                                'RowReorder' = NULL, 
+                              extensions = list(#'ColReorder' = NULL, 
+                                                #'RowReorder' = NULL, 
                                                 'Buttons' = NULL
                                                 ), 
                               options = list(dom = 'Bfrtip', #scrollX = TRUE, autoWidth = TRUE, 
-                                             lengthMenu = list(c(10, 50, 100, -1), c('10', '50', '100', 'All')), 
+                                             #lengthMenu = list(c(10, 50, 100, -1), c('10', '50', '100', 'All')), 
                                              #ColReorder = TRUE, 
-                                             rownames= FALSE,
+                                             #rownames= FALSE,
                                 columnDefs = list(list(targets = c(0,1,8), visible = FALSE)),
                                              #rowReorder = TRUE, 
                                              buttons = list(
                                                             list(extend = 'collection', 
-                                                                 buttons = c('csv', 'excel', 'pdf'), 
+                                                                 buttons = c('csv', 'excel'), 
                                                                  text = 'Download',
                                                                  filename= 'ACCDB_download',
                                                                  exportOptions = list(
