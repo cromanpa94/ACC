@@ -16,7 +16,7 @@ firstup <- function(x) {
   x
 }
 library(DT)
-ACC<-read.csv('ACCDBJun28.csv')
+ACC<-read.csv('ACCDB_Mar24.csv')
 colnames(ACC)<-firstup(colnames(ACC))
 colnames(ACC)[c(7,9,11)]<-c("Species","2N", "N")
 
@@ -36,7 +36,7 @@ DT::datatable(stp, filter = 'top', rownames = FALSE,
                                              #rowReorder = TRUE, 
                                              buttons = list(
                                                             list(extend = 'collection', 
-                                                                 buttons = c('csv', 'excel'), 
+                                                                 buttons = c('csv'), 
                                                                  text = 'Download',
                                                                  filename= 'ACCDB_download',
                                                                  exportOptions = list(

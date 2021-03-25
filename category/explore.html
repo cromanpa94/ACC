@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -47,6 +46,15 @@ if (!!window.navigator.userAgent.match("MSIE 8")) {
 !function(a){"use strict";a.matchMedia=a.matchMedia||function(a){var b,c=a.documentElement,d=c.firstElementChild||c.firstChild,e=a.createElement("body"),f=a.createElement("div");return f.id="mq-test-1",f.style.cssText="position:absolute;top:-100em",e.style.background="none",e.appendChild(f),function(a){return f.innerHTML='&shy;<style media="'+a+'"> #mq-test-1 { width: 42px; }</style>',c.insertBefore(e,d),b=42===f.offsetWidth,c.removeChild(e),{matches:b,media:a}}}(a.document)}(this),function(a){"use strict";function b(){u(!0)}var c={};a.respond=c,c.update=function(){};var d=[],e=function(){var b=!1;try{b=new a.XMLHttpRequest}catch(c){b=new a.ActiveXObject("Microsoft.XMLHTTP")}return function(){return b}}(),f=function(a,b){var c=e();c&&(c.open("GET",a,!0),c.onreadystatechange=function(){4!==c.readyState||200!==c.status&&304!==c.status||b(c.responseText)},4!==c.readyState&&c.send(null))};if(c.ajax=f,c.queue=d,c.regex={media:/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,keyframes:/@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,urls:/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,findStyles:/@media *([^\{]+)\{([\S\s]+?)$/,only:/(only\s+)?([a-zA-Z]+)\s?/,minw:/\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,maxw:/\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/},c.mediaQueriesSupported=a.matchMedia&&null!==a.matchMedia("only all")&&a.matchMedia("only all").matches,!c.mediaQueriesSupported){var g,h,i,j=a.document,k=j.documentElement,l=[],m=[],n=[],o={},p=30,q=j.getElementsByTagName("head")[0]||k,r=j.getElementsByTagName("base")[0],s=q.getElementsByTagName("link"),t=function(){var a,b=j.createElement("div"),c=j.body,d=k.style.fontSize,e=c&&c.style.fontSize,f=!1;return b.style.cssText="position:absolute;font-size:1em;width:1em",c||(c=f=j.createElement("body"),c.style.background="none"),k.style.fontSize="100%",c.style.fontSize="100%",c.appendChild(b),f&&k.insertBefore(c,k.firstChild),a=b.offsetWidth,f?k.removeChild(c):c.removeChild(b),k.style.fontSize=d,e&&(c.style.fontSize=e),a=i=parseFloat(a)},u=function(b){var c="clientWidth",d=k[c],e="CSS1Compat"===j.compatMode&&d||j.body[c]||d,f={},o=s[s.length-1],r=(new Date).getTime();if(b&&g&&p>r-g)return a.clearTimeout(h),h=a.setTimeout(u,p),void 0;g=r;for(var v in l)if(l.hasOwnProperty(v)){var w=l[v],x=w.minw,y=w.maxw,z=null===x,A=null===y,B="em";x&&(x=parseFloat(x)*(x.indexOf(B)>-1?i||t():1)),y&&(y=parseFloat(y)*(y.indexOf(B)>-1?i||t():1)),w.hasquery&&(z&&A||!(z||e>=x)||!(A||y>=e))||(f[w.media]||(f[w.media]=[]),f[w.media].push(m[w.rules]))}for(var C in n)n.hasOwnProperty(C)&&n[C]&&n[C].parentNode===q&&q.removeChild(n[C]);n.length=0;for(var D in f)if(f.hasOwnProperty(D)){var E=j.createElement("style"),F=f[D].join("\n");E.type="text/css",E.media=D,q.insertBefore(E,o.nextSibling),E.styleSheet?E.styleSheet.cssText=F:E.appendChild(j.createTextNode(F)),n.push(E)}},v=function(a,b,d){var e=a.replace(c.regex.keyframes,"").match(c.regex.media),f=e&&e.length||0;b=b.substring(0,b.lastIndexOf("/"));var g=function(a){return a.replace(c.regex.urls,"$1"+b+"$2$3")},h=!f&&d;b.length&&(b+="/"),h&&(f=1);for(var i=0;f>i;i++){var j,k,n,o;h?(j=d,m.push(g(a))):(j=e[i].match(c.regex.findStyles)&&RegExp.$1,m.push(RegExp.$2&&g(RegExp.$2))),n=j.split(","),o=n.length;for(var p=0;o>p;p++)k=n[p],l.push({media:k.split("(")[0].match(c.regex.only)&&RegExp.$2||"all",rules:m.length-1,hasquery:k.indexOf("(")>-1,minw:k.match(c.regex.minw)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:k.match(c.regex.maxw)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}u()},w=function(){if(d.length){var b=d.shift();f(b.href,function(c){v(c,b.href,b.media),o[b.href]=!0,a.setTimeout(function(){w()},0)})}},x=function(){for(var b=0;b<s.length;b++){var c=s[b],e=c.href,f=c.media,g=c.rel&&"stylesheet"===c.rel.toLowerCase();e&&g&&!o[e]&&(c.styleSheet&&c.styleSheet.rawCssText?(v(c.styleSheet.rawCssText,e,f),o[e]=!0):(!/^([a-zA-Z:]*\/\/)/.test(e)&&!r||e.replace(RegExp.$1,"").split("/")[0]===a.location.host)&&("//"===e.substring(0,2)&&(e=a.location.protocol+e),d.push({href:e,media:f})))}w()};x(),c.update=x,c.getEmValue=t,a.addEventListener?a.addEventListener("resize",b,!1):a.attachEvent&&a.attachEvent("onresize",b)}}(this);
 };
 </script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script>
 
 /**
@@ -443,13 +451,38 @@ color: #d14;
           theseArgs = theseArgs.concat([task.data]);
           task = task.code;
         }
-        var taskFunc = eval("(" + task + ")");
+        var taskFunc = tryEval(task);
         if (typeof(taskFunc) !== "function") {
           throw new Error("Task must be a function! Source:\n" + task);
         }
         taskFunc.apply(target, theseArgs);
       });
     }
+  }
+
+  // Attempt eval() both with and without enclosing in parentheses.
+  // Note that enclosing coerces a function declaration into
+  // an expression that eval() can parse
+  // (otherwise, a SyntaxError is thrown)
+  function tryEval(code) {
+    var result = null;
+    try {
+      result = eval(code);
+    } catch(error) {
+      if (!error instanceof SyntaxError) {
+        throw error;
+      }
+      try {
+        result = eval("(" + code + ")");
+      } catch(e) {
+        if (e instanceof SyntaxError) {
+          throw error;
+        } else {
+          throw e;
+        }
+      }
+    }
+    return result;
   }
 
   function initSizing(el) {
@@ -844,17 +877,56 @@ color: #d14;
     invokePostRenderHandlers();
   }
 
-  // Wait until after the document has loaded to render the widgets.
+
+  function has_jQuery3() {
+    if (!window.jQuery) {
+      return false;
+    }
+    var $version = window.jQuery.fn.jquery;
+    var $major_version = parseInt($version.split(".")[0]);
+    return $major_version >= 3;
+  }
+
+  /*
+  / Shiny 1.4 bumped jQuery from 1.x to 3.x which means jQuery's
+  / on-ready handler (i.e., $(fn)) is now asyncronous (i.e., it now
+  / really means $(setTimeout(fn)).
+  / https://jquery.com/upgrade-guide/3.0/#breaking-change-document-ready-handlers-are-now-asynchronous
+  /
+  / Since Shiny uses $() to schedule initShiny, shiny>=1.4 calls initShiny
+  / one tick later than it did before, which means staticRender() is
+  / called renderValue() earlier than (advanced) widget authors might be expecting.
+  / https://github.com/rstudio/shiny/issues/2630
+  /
+  / For a concrete example, leaflet has some methods (e.g., updateBounds)
+  / which reference Shiny methods registered in initShiny (e.g., setInputValue).
+  / Since leaflet is privy to this life-cycle, it knows to use setTimeout() to
+  / delay execution of those methods (until Shiny methods are ready)
+  / https://github.com/rstudio/leaflet/blob/18ec981/javascript/src/index.js#L266-L268
+  /
+  / Ideally widget authors wouldn't need to use this setTimeout() hack that
+  / leaflet uses to call Shiny methods on a staticRender(). In the long run,
+  / the logic initShiny should be broken up so that method registration happens
+  / right away, but binding happens later.
+  */
+  function maybeStaticRenderLater() {
+    if (shinyMode && has_jQuery3()) {
+      window.jQuery(window.HTMLWidgets.staticRender);
+    } else {
+      window.HTMLWidgets.staticRender();
+    }
+  }
+
   if (document.addEventListener) {
     document.addEventListener("DOMContentLoaded", function() {
       document.removeEventListener("DOMContentLoaded", arguments.callee, false);
-      window.HTMLWidgets.staticRender();
+      maybeStaticRenderLater();
     }, false);
   } else if (document.attachEvent) {
     document.attachEvent("onreadystatechange", function() {
       if (document.readyState === "complete") {
         document.detachEvent("onreadystatechange", arguments.callee);
-        window.HTMLWidgets.staticRender();
+        maybeStaticRenderLater();
       }
     });
   }
@@ -942,7 +1014,7 @@ color: #d14;
       if (o !== null && typeof o === "object" && part in o) {
         if (i == (l - 1)) { // if we are at the end of the line then evalulate
           if (typeof o[part] === "string")
-            o[part] = eval("(" + o[part] + ")");
+            o[part] = tryEval(o[part]);
         } else { // otherwise continue to next embedded object
           o = o[part];
         }
@@ -1084,12 +1156,16 @@ var u=a(":focus");u.click(),u.focus(),c.preventDefault(),a(document).data("space
   }
 });</script>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -1102,32 +1178,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -1138,13 +1189,8 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -1158,6 +1204,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -1170,7 +1219,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -1206,6 +1254,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -1233,7 +1282,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -1252,25 +1301,25 @@ summary {
 <p>Distribution of haploid numbers for <em>Animals</em>.</p>
 
 <html>
-<select id="uYL0RvlNm1" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Animalia_kingdom.png">Animalia</option></select>
-<img src="plots/Animalia_kingdom.png" name="7iYScIBYpP" height="500" width="100%"/>
+<select id="IatHAetSEk" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Animalia_kingdom.png">Animalia</option></select>
+<img src="plots/Animalia_kingdom.png" name="XZuHxt7SIC" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#uYL0RvlNm1").change(function(){
-                 $("img[name=7iYScIBYpP]").attr("src",$(this).val());
+                 $("#IatHAetSEk").change(function(){
+                 $("img[name=XZuHxt7SIC]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-e355f52f9ecf844f2c96" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-e355f52f9ecf844f2c96">{"x":[],"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5f7c36d0687dfbb8e33f" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-5f7c36d0687dfbb8e33f">{"x":[],"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="phylum" class="section level3">
 <h3>Phylum</h3>
 <p>Distribution of haploid numbers for different Animal <em>phyla</em>.</p>
 
 <html>
-<select id="V3kr6wR6la" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Annelida_phylum.png">Annelida</option>
+<select id="giDeVBvGPd" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Annelida_phylum.png">Annelida</option>
 <option value="plots/Arthropoda_phylum.png">Arthropoda</option>
 <option value="plots/Chordata_phylum.png">Chordata</option>
 <option value="plots/Cnidaria_phylum.png">Cnidaria</option>
@@ -1281,29 +1330,30 @@ summary {
 <option value="plots/Platyhelminthes_phylum.png">Platyhelminthes</option>
 <option value="plots/Rotifera_phylum.png">Rotifera</option>
 <option value="plots/Xenacoelomorpha_phylum.png">Xenacoelomorpha</option></select>
-<img src="plots/Annelida_phylum.png" name="4iHjqo8esB" height="500" width="100%"/>
+<img src="plots/Annelida_phylum.png" name="iXgFEe3L9z" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#V3kr6wR6la").change(function(){
-                 $("img[name=4iHjqo8esB]").attr("src",$(this).val());
+                 $("#giDeVBvGPd").change(function(){
+                 $("img[name=iXgFEe3L9z]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-1e16a9de845fa0c01d23" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-1e16a9de845fa0c01d23">{"x":[],"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f63a174b7c13d6929597" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-f63a174b7c13d6929597">{"x":[],"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="class" class="section level3">
 <h3>Class</h3>
 <p>Distribution of haploid numbers for different Animal <em>classes</em>.</p>
 
 <html>
-<select id="DEznvjjxqM" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acoela_class.png">Acoela</option>
+<select id="qc5VpVSXGq" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acoela_class.png">Acoela</option>
 <option value="plots/Actinopterygii_class.png">Actinopterygii</option>
 <option value="plots/Amphibia_class.png">Amphibia</option>
 <option value="plots/Arachnida_class.png">Arachnida</option>
 <option value="plots/Aves_class.png">Aves</option>
 <option value="plots/Bivalvia_class.png">Bivalvia</option>
+<option value="plots/Branchiopoda_class.png">Branchiopoda</option>
 <option value="plots/Cestoda_class.png">Cestoda</option>
 <option value="plots/Chilopoda_class.png">Chilopoda</option>
 <option value="plots/Clitellata_class.png">Clitellata</option>
@@ -1322,24 +1372,24 @@ summary {
 <option value="plots/Rhabditophora_class.png">Rhabditophora</option>
 <option value="plots/Secernentea_class.png">Secernentea</option>
 <option value="plots/Trematoda_class.png">Trematoda</option></select>
-<img src="plots/Acoela_class.png" name="okuH7eFnQl" height="500" width="100%"/>
+<img src="plots/Acoela_class.png" name="zFCY4irFLQ" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#DEznvjjxqM").change(function(){
-                 $("img[name=okuH7eFnQl]").attr("src",$(this).val());
+                 $("#qc5VpVSXGq").change(function(){
+                 $("img[name=zFCY4irFLQ]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-76faf0c06e192798f034" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-76faf0c06e192798f034">{"x":[],"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ceb3b1b7c72e8ae03b34" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-ceb3b1b7c72e8ae03b34">{"x":[],"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="order" class="section level3">
 <h3>Order</h3>
 <p>Distribution of haploid numbers for different Animal <em>orders</em>.</p>
 
 <html>
-<select id="Eic1VXxGrj" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acoela_order.png">Acoela</option>
+<select id="JpIrDVYTsB" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acoela_order.png">Acoela</option>
 <option value="plots/Anura_order.png">Anura</option>
 <option value="plots/Araneae_order.png">Araneae</option>
 <option value="plots/Artiodactyla_order.png">Artiodactyla</option>
@@ -1365,6 +1415,7 @@ summary {
 <option value="plots/Hemiptera_order.png">Hemiptera</option>
 <option value="plots/Hymenoptera_order.png">Hymenoptera</option>
 <option value="plots/Isopoda_order.png">Isopoda</option>
+<option value="plots/Lagomorpha_order.png">Lagomorpha</option>
 <option value="plots/Lepidoptera_order.png">Lepidoptera</option>
 <option value="plots/Littorinimorpha_order.png">Littorinimorpha</option>
 <option value="plots/Mantodea_order.png">Mantodea</option>
@@ -1400,24 +1451,24 @@ summary {
 <option value="plots/Trichoptera_order.png">Trichoptera</option>
 <option value="plots/Tricladida_order.png">Tricladida</option>
 <option value="plots/Trombidiformes_order.png">Trombidiformes</option></select>
-<img src="plots/Acoela_order.png" name="3pzsoZg3z6" height="500" width="100%"/>
+<img src="plots/Acoela_order.png" name="TZlPkRUZEP" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#Eic1VXxGrj").change(function(){
-                 $("img[name=3pzsoZg3z6]").attr("src",$(this).val());
+                 $("#JpIrDVYTsB").change(function(){
+                 $("img[name=TZlPkRUZEP]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-74860cec22eff218d671" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-74860cec22eff218d671">{"x":[],"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e741acf3753dffcab1ea" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-e741acf3753dffcab1ea">{"x":[],"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="family" class="section level3">
 <h3>Family</h3>
 <p>Distribution of haploid numbers for different Animal <em>families</em>.</p>
 
 <html>
-<select id="66JFyVjU1V" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acrididae_family.png">Acrididae</option>
+<select id="O2pki7IGIm" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Acrididae_family.png">Acrididae</option>
 <option value="plots/Agelenidae_family.png">Agelenidae</option>
 <option value="plots/Aphididae_family.png">Aphididae</option>
 <option value="plots/Aphrophoridae_family.png">Aphrophoridae</option>
@@ -1432,10 +1483,12 @@ summary {
 <option value="plots/Canidae_family.png">Canidae</option>
 <option value="plots/Carabidae_family.png">Carabidae</option>
 <option value="plots/Catenulidae_family.png">Catenulidae</option>
+<option value="plots/Cecidomyiidae_family.png">Cecidomyiidae</option>
 <option value="plots/Cerambycidae_family.png">Cerambycidae</option>
 <option value="plots/Chrysomelidae_family.png">Chrysomelidae</option>
 <option value="plots/Coreidae_family.png">Coreidae</option>
 <option value="plots/Corvidae_family.png">Corvidae</option>
+<option value="plots/Crabronidae_family.png">Crabronidae</option>
 <option value="plots/Cricetidae_family.png">Cricetidae</option>
 <option value="plots/Curculionidae_family.png">Curculionidae</option>
 <option value="plots/Cyclopidae_family.png">Cyclopidae</option>
@@ -1461,6 +1514,7 @@ summary {
 <option value="plots/Heteromyidae_family.png">Heteromyidae</option>
 <option value="plots/Hylidae_family.png">Hylidae</option>
 <option value="plots/Hynobiidae_family.png">Hynobiidae</option>
+<option value="plots/Ichneumonidae_family.png">Ichneumonidae</option>
 <option value="plots/Kalotermitidae_family.png">Kalotermitidae</option>
 <option value="plots/Lacertidae_family.png">Lacertidae</option>
 <option value="plots/Lumbricidae_family.png">Lumbricidae</option>
@@ -1500,24 +1554,26 @@ summary {
 <option value="plots/Toxopneustidae_family.png">Toxopneustidae</option>
 <option value="plots/Vespertilionidae_family.png">Vespertilionidae</option>
 <option value="plots/Vespidae_family.png">Vespidae</option></select>
-<img src="plots/Acrididae_family.png" name="44zrGFhCVB" height="500" width="100%"/>
+<img src="plots/Acrididae_family.png" name="Y66oleDRk6" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#66JFyVjU1V").change(function(){
-                 $("img[name=44zrGFhCVB]").attr("src",$(this).val());
+                 $("#O2pki7IGIm").change(function(){
+                 $("img[name=Y66oleDRk6]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-1cda3191af5a290ae01b" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-1cda3191af5a290ae01b">{"x":[],"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-fd938d603443bd0cf21d" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-fd938d603443bd0cf21d">{"x":[],"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="genus" class="section level3">
 <h3>Genus</h3>
 <p>Distribution of haploid numbers for different Animal <em>genera</em>.</p>
 
 <html>
-<select id="YConk8Qvi9" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Agrodiaetus_genus.png">Agrodiaetus</option>
+<select id="5IGWuFoEs9" class="selectpicker" data-dropdown-align-right="false" data-dropup-auto="true" data-header="false" data-live-search="true" data-live-search-style="contains" data-show-tick="true" data-width="false" data-size="auto"><option value="plots/Agrodiaetus_genus.png">Agrodiaetus</option>
+<option value="plots/Amara_genus.png">Amara</option>
+<option value="plots/Aphaenogaster_genus.png">Aphaenogaster</option>
 <option value="plots/Apiomorpha_genus.png">Apiomorpha</option>
 <option value="plots/Camponotus_genus.png">Camponotus</option>
 <option value="plots/Catenula_genus.png">Catenula</option>
@@ -1526,16 +1582,20 @@ summary {
 <option value="plots/Cordia_genus.png">Cordia</option>
 <option value="plots/Corydoras_genus.png">Corydoras</option>
 <option value="plots/Crocidura_genus.png">Crocidura</option>
+<option value="plots/Dipodomys_genus.png">Dipodomys</option>
 <option value="plots/Dytiscus_genus.png">Dytiscus</option>
 <option value="plots/Erebia_genus.png">Erebia</option>
 <option value="plots/Euscorpius_genus.png">Euscorpius</option>
 <option value="plots/Galeus_genus.png">Galeus</option>
 <option value="plots/Lacerta_genus.png">Lacerta</option>
 <option value="plots/Laemostenus_genus.png">Laemostenus</option>
+<option value="plots/Lasioglossum_genus.png">Lasioglossum</option>
+<option value="plots/Leptogenys_genus.png">Leptogenys</option>
 <option value="plots/Leptothorax_genus.png">Leptothorax</option>
 <option value="plots/Lycia_genus.png">Lycia</option>
 <option value="plots/Menippe_genus.png">Menippe</option>
 <option value="plots/Microtus_genus.png">Microtus</option>
+<option value="plots/Monomorium_genus.png">Monomorium</option>
 <option value="plots/Mus_genus.png">Mus</option>
 <option value="plots/Myrmecia_genus.png">Myrmecia</option>
 <option value="plots/Ornithorhynchus_genus.png">Ornithorhynchus</option>
@@ -1549,24 +1609,27 @@ summary {
 <option value="plots/Polyommatus_genus.png">Polyommatus</option>
 <option value="plots/Proechimys_genus.png">Proechimys</option>
 <option value="plots/Rhea_genus.png">Rhea</option>
+<option value="plots/Rhytidoponera_genus.png">Rhytidoponera</option>
 <option value="plots/Scyliorhinus_genus.png">Scyliorhinus</option>
 <option value="plots/Sorex_genus.png">Sorex</option>
 <option value="plots/Stenostomum_genus.png">Stenostomum</option>
+<option value="plots/Temnothorax_genus.png">Temnothorax</option>
+<option value="plots/Tenthredo_genus.png">Tenthredo</option>
 <option value="plots/Thomomys_genus.png">Thomomys</option>
 <option value="plots/Torpedo_genus.png">Torpedo</option>
 <option value="plots/Toxocara_genus.png">Toxocara</option>
 <option value="plots/Turdus_genus.png">Turdus</option></select>
-<img src="plots/Agrodiaetus_genus.png" name="4lwKO3i8ch" height="500" width="100%"/>
+<img src="plots/Agrodiaetus_genus.png" name="o4TaZ0ca9p" height="500" width="100%"/>
 <script>$(document).ready(function(){
-                 $("#YConk8Qvi9").change(function(){
-                 $("img[name=4lwKO3i8ch]").attr("src",$(this).val());
+                 $("#5IGWuFoEs9").change(function(){
+                 $("img[name=o4TaZ0ca9p]").attr("src",$(this).val());
 
                  });
 
   });</script>
 </html>
-<div id="htmlwidget-daa088c12fecfd163233" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
-<script type="application/json" data-for="htmlwidget-daa088c12fecfd163233">{"x":[],"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1458a6f5b0cc3ef7be5c" style="width:384px;height:10px;" class="bsselect html-widget" width="384" height="10"></div>
+<script type="application/json" data-for="htmlwidget-1458a6f5b0cc3ef7be5c">{"x":[],"evals":[],"jsHooks":[]}</script>
 <p><a href="/ACC">Home</a></p>
 </div>
 
@@ -1579,7 +1642,7 @@ summary {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -1597,7 +1660,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
