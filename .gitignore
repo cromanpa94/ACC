@@ -48,3 +48,4 @@ _config.dev.yml
 .vscode
 *.gem
 .Rproj.user
+vendor/
